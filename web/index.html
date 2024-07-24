@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Salario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Predicción de Salario</h1>
+        <form id="prediction-form">
+            <div class="section">
+                <h2>Detalles del Usuario</h2>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="17" max="90" required>
+                </div>
+                <div class="form-group">
+                    <label for="fnlwgt">Peso Final (FNLWGT):</label>
+                    <input type="number" id="fnlwgt" name="fnlwgt" required> 
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Educación y Empleo</h2>
+                <div class="form-group">
+                    <label for="educacion">Educación:</label>
+                    <select id="educacion" name="educacion" required>
+                        <option value="0">10mo</option>
+                        <option value="1">11mo</option>
+                        <option value="2">12mo</option>
+                        <option value="3">1ro-4to</option>
+                        <option value="4">5to-6to</option>
+                        <option value="5">7mo-8vo</option>
+                        <option value="6">9no</option>
+                        <option value="7">Asociado académico</option>
+                        <option value="8">Asociado vocacional</option>
+                        <option value="9">Licenciatura</option>
+                        <option value="10">Doctorado</option>
+                        <option value="11">Graduado HS</option>
+                        <option value="12">Maestría</option>
+                        <option value="13">Preescolar</option>
+                        <option value="14">Escuela profesional</option>
+                        <option value="15">Algo de universidad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estado_civil">Estado Civil:</label>
+                    <select id="estado_civil" name="estado_civil" required>
+                        <option value="Divorced">Divorciado</option>
+                        <option value="Married-spouse-absent">Casado pero ausente</option>
+                        <option value="Never-married">Nunca casado</option>
+                        <option value="Separated">Separado</option>
+                        <option value="Widowed">Viudo</option>
+                        <option value="Married-AF-spouse">Casado con esposo AF</option>
+                        <option value="Married-civ-spouse">Casado con esposo civil</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ocupacion">Ocupación:</label>
+                    <select id="ocupacion" name="ocupacion" required>
+                        <option value="0">Admin-clerical</option>
+                        <option value="1">Fuerzas armadas</option>
+                        <option value="2">Reparación artesanal</option>
+                        <option value="3">Ejecutivo gerencial</option>
+                        <option value="4">Agricultura-pesca</option>
+                        <option value="5">Manipuladores-limpiadores</option>
+                        <option value="6">Inspección de máquinas</option>
+                        <option value="7">Otros servicios</option>
+                        <option value="8">Servicio doméstico</option>
+                        <option value="9">Especialidad profesional</option>
+                        <option value="10">Servicios de protección</option>
+                        <option value="11">Ventas</option>
+                        <option value="12">Soporte técnico</option>
+                        <option value="13">Transporte-mudanzas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipo_empleo">Tipo de Empleo:</label>
+                    <select id="tipo_empleo" name="tipo_empleo" required>
+                        <option value="0">Gobierno</option>
+                        <option value="1">Privado</option>
+                        <option value="2">Autónomo</option>
+                        <option value="3">Sin pago</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Datos Adicionales</h2>
+                <div class="form-group">
+                    <label for="relacion">Relación:</label>
+                    <select id="relacion" name="relacion" required>
+                        <option value="0">Esposo</option>
+                        <option value="1">No en familia</option>
+                        <option value="2">Otro pariente</option>
+                        <option value="3">Hijo propio</option>
+                        <option value="4">Soltero</option>
+                        <option value="5">Esposa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="raza">Raza:</label>
+                    <select id="raza" name="raza" required>
+                        <option value="0">Amerindio-Eskimo</option>
+                        <option value="1">Asiático-Isleño del Pacífico</option>
+                        <option value="2">Negro</option>
+                        <option value="3">Otro</option>
+                        <option value="4">Blanco</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="0">Femenino</option>
+                        <option value="1">Masculino</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ganancia-capital">Ganancia de Capital:</label>
+                    <input type="number" id="ganancia-capital" name="ganancia-capital" min="0" max="99999" required>
+                </div>
+                <div class="form-group">
+                    <label for="perdida-capital">Pérdida de Capital:</label>
+                    <input type="number" id="perdida-capital" name="perdida-capital" min="0" max="4356" required>
+                </div>
+                <div class="form-group">
+                    <label for="horas_semana">Horas por Semana:</label>
+                    <input type="number" id="horas_semana" name="horas_semana" min="1" max="99" required>
+                </div>
+                <div class="form-group">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="0">Camboya</option>
+                        <option value="1">Canadá</option>
+                        <option value="2">China</option>
+                        <option value="3">Colombia</option>
+                        <option value="4">Cuba</option>
+                        <option value="5">República Dominicana</option>
+                        <option value="6">Ecuador</option>
+                        <option value="7">El Salvador</option>
+                        <option value="8">Inglaterra</option>
+                        <option value="9">Francia</option>
+                        <option value="10">Alemania</option>
+                        <option value="11">Grecia</option>
+                        <option value="12">Guatemala</option>
+                        <option value="13">Haití</option>
+                        <option value="14">Países Bajos</option>
+                        <option value="15">Honduras</option>
+                        <option value="16">Hong Kong</option>
+                        <option value="17">Hungría</option>
+                        <option value="18">India</option>
+                        <option value="19">Irán</option>
+                        <option value="20">Irlanda</option>
+                        <option value="21">Italia</option>
+                        <option value="22">Jamaica</option>
+                        <option value="23">Japón</option>
+                        <option value="24">Laos</option>
+                        <option value="25">México</option>
+                        <option value="26">Nicaragua</option>
+                        <option value="27">Territorios lejanos de EE.UU.</option>
+                        <option value="28">Perú</option>
+                        <option value="29">Filipinas</option>
+                        <option value="30">Polonia</option>
+                        <option value="31">Portugal</option>
+                        <option value="32">Puerto Rico</option>
+                        <option value="33">Escocia</option>
+                        <option value="34">Sur</option>
+                        <option value="35">Taiwán</option>
+                        <option value="36">Tailandia</option>
+                        <option value="37">Trinidad y Tobago</option>
+                        <option value="38">Estados Unidos</option>
+                        <option value="39">Vietnam</option>
+                        <option value="40">Yugoslavia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipo_empleo">Tipo de Empleo:</label>
+                    <select id="tipo_empleo" name="tipo_empleo" required>
+                        <option value="0">Gobierno</option>
+                        <option value="1">Privado</option>
+                        <option value="2">Autónomo</option>
+                        <option value="3">Sin pago</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Predecir</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+                        <
