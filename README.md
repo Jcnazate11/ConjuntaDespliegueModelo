@@ -27,12 +27,12 @@ Activa el entorno virtual:
     En Windows:
 
 
-
-venv\Scripts\activate
+bash
+myenv\Scripts\activate
 
 En macOS/Linux:
 
-
+bash
 
     source venv/bin/activate
 
