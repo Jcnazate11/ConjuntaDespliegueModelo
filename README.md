@@ -12,14 +12,14 @@ Sigue estos pasos para clonar y ejecutar el proyecto localmente.
 
     Clona el repositorio:
 
-    bash
+  
 
-git clone https://github.com/tu_usuario/tu_repositorio.git
+git clone [https://github.com/tu_usuario/tu_repositorio.git](https://github.com/Jcnazate11/ConjuntaDespliegueModelo.git)
 cd tu_repositorio
 
 Crea un entorno virtual:
 
-bash
+
 
 python -m venv myenv
 
@@ -27,19 +27,19 @@ Activa el entorno virtual:
 
 En Windows:
 
-bash
+
 
 myenv\Scripts\activate
 
 En macOS/Linux:
 
-bash
+
 
 source myenv/bin/activate
 
 Instala las dependencias:
 
-bash
+
 
 pip install -r requirements.txt
 
@@ -47,7 +47,7 @@ Asegúrate de tener el archivo pickle_model.pkl en el directorio del proyecto. E
 
 Ejecuta la aplicación:
 
-bash
+
 
     python app.py
 
