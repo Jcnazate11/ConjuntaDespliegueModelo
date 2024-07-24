@@ -1,4 +1,4 @@
-Predicción de Salario
+##Predicción de Salario
 
 Este es un proyecto de predicción de salario utilizando Flask. La aplicación permite al usuario ingresar varios parámetros para predecir si el salario de una persona es mayor o menor a $50,000.
 Requisitos
@@ -6,7 +6,7 @@ Requisitos
     Python 3.7 o superior
     pip (el gestor de paquetes de Python)
 
-Instalación
+##Instalación
 
 Sigue estos pasos para clonar y ejecutar el proyecto localmente.
 
