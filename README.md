@@ -1,4 +1,4 @@
-##Predicción de Salario
+#Predicción de Salario
 
 Este es un proyecto de predicción de salario utilizando Flask. La aplicación permite al usuario ingresar varios parámetros para predecir si el salario de una persona es mayor o menor a $50,000.
 Requisitos
@@ -6,52 +6,39 @@ Requisitos
     Python 3.7 o superior
     pip (el gestor de paquetes de Python)
 
-##Instalación
+#Instalación
 
 Sigue estos pasos para clonar y ejecutar el proyecto localmente.
 
-    Clona el repositorio:
+Clona el repositorio:
 
   
 
-git clone [https://github.com/tu_usuario/tu_repositorio.git](https://github.com/Jcnazate11/ConjuntaDespliegueModelo.git)
+    git clone [https://github.com/tu_usuario/tu_repositorio.git](https://github.com/Jcnazate11/ConjuntaDespliegueModelo.git)
+    
 cd tu_repositorio
 
 Crea un entorno virtual:
 
-
-
-python -m venv myenv
+    python -m venv myenv
 
 Activa el entorno virtual:
 
 En Windows:
 
-
-
-myenv\Scripts\activate
-
-En macOS/Linux:
-
-
-
-source myenv/bin/activate
+    myenv\Scripts\activate
 
 Instala las dependencias:
 
-
-
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 Asegúrate de tener el archivo pickle_model.pkl en el directorio del proyecto. Este archivo contiene el modelo previamente entrenado.
 
 Ejecuta la aplicación:
 
-
-
     python app.py
 
-Uso
+#Uso
 
 Una vez que la aplicación esté en ejecución, abre tu navegador web y ve a http://127.0.0.1:5000/. Verás un formulario donde puedes ingresar los parámetros para la predicción.
 Parámetros del formulario
@@ -83,5 +70,7 @@ En la carpeta Modelos se encuentran los códigos en formato .ipynb (Jupyter Note
     Redes neuronales
 
 Estos notebooks contienen el código y el proceso de entrenamiento de cada uno de los modelos utilizados para la predicción de salarios.
+
+Para realizar el archivo .csv se debe correr el el codigo Examen_PreparacionData_Nazate_Esparza, el cual realiza el proceso de analisis de la data, limpieza de la data y despues guarda el data nuevo en un archivo .csv.
 
 Con estos pasos y detalles adicionales, deberías poder clonar, instalar, y ejecutar el proyecto de predicción de salarios localmente, así como entender y explorar los distintos modelos de aprendizaje supervisado utilizados.
