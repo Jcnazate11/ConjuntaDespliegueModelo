@@ -1,44 +1,45 @@
-# Predicción de Salario
+Predicción de Salario
 
 Este es un proyecto de predicción de salario utilizando Flask. La aplicación permite al usuario ingresar varios parámetros para predecir si el salario de una persona es mayor o menor a $50,000.
+Requisitos
 
-## Requisitos
+    Python 3.7 o superior
+    pip (el gestor de paquetes de Python)
 
-- Python 3.7 o superior
-- pip (el gestor de paquetes de Python)
-
-## Instalación
+Instalación
 
 Sigue estos pasos para clonar y ejecutar el proyecto localmente.
 
-1. Clona el repositorio:
+    Clona el repositorio:
 
+    bash
 
-   git clone https://github.com/tu_usuario/tu_repositorio.git
-   cd tu_repositorio
-   Crea un entorno virtual:
+git clone https://github.com/tu_usuario/tu_repositorio.git
+cd tu_repositorio
+
+Crea un entorno virtual:
 
 bash
 
-python -m venv venv
+python -m venv myenv
 
 Activa el entorno virtual:
 
-    En Windows:
-
+En Windows:
 
 bash
+
 myenv\Scripts\activate
 
 En macOS/Linux:
 
 bash
 
-    source venv/bin/activate
+source myenv/bin/activate
 
 Instala las dependencias:
 
-
+bash
 
 pip install -r requirements.txt
 
@@ -46,10 +47,9 @@ Asegúrate de tener el archivo pickle_model.pkl en el directorio del proyecto. E
 
 Ejecuta la aplicación:
 
+bash
 
-
-python app.py
-
+    python app.py
 
 Uso
 
@@ -70,6 +70,18 @@ Parámetros del formulario
     País: País de residencia.
     Tipo de Empleo: Tipo de empleo.
 
-Predicción
-
 Después de ingresar los datos, haz clic en "Predecir". La aplicación te mostrará si el salario de la persona es mayor o menor a $50,000.
+Modelos
+
+En la carpeta Modelos se encuentran los códigos en formato .ipynb (Jupyter Notebook) de los algoritmos de Aprendizaje Supervisado utilizados en el proyecto, que incluyen:
+
+    Regresión (seleccionar uno)
+    SVM (4 kernels)
+    k-NN (identificar el mejor número para k)
+    Árboles de decisión
+    Bayes
+    Redes neuronales
+
+Estos notebooks contienen el código y el proceso de entrenamiento de cada uno de los modelos utilizados para la predicción de salarios.
+
+Con estos pasos y detalles adicionales, deberías poder clonar, instalar, y ejecutar el proyecto de predicción de salarios localmente, así como entender y explorar los distintos modelos de aprendizaje supervisado utilizados.
