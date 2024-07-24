@@ -15,12 +15,11 @@ Clona el repositorio:
   
 
     git clone [https://github.com/tu_usuario/tu_repositorio.git](https://github.com/Jcnazate11/ConjuntaDespliegueModelo.git)
-    
-cd tu_repositorio
 
-Crea un entorno virtual:
+Abre un cmd  y redirecciona a la carpeta donde se tiene el proyecto descargado  o clonado , colocada :
 
-    python -m venv myenv
+    cd tu_repositorio
+
 
 Activa el entorno virtual:
 
@@ -74,3 +73,9 @@ Estos notebooks contienen el código y el proceso de entrenamiento de cada uno d
 Para realizar el archivo .csv se debe correr el el codigo Examen_PreparacionData_Nazate_Esparza, el cual realiza el proceso de analisis de la data, limpieza de la data y despues guarda el data nuevo en un archivo .csv.
 
 Con estos pasos y detalles adicionales, deberías poder clonar, instalar, y ejecutar el proyecto de predicción de salarios localmente, así como entender y explorar los distintos modelos de aprendizaje supervisado utilizados.
+
+Proyecto en Ejecución:
+
+![imagen](https://github.com/user-attachments/assets/ca882300-6bf9-4fd8-95a5-80b2e8a4715e)
+
+![imagen](https://github.com/user-attachments/assets/be2c37f0-e11c-47b1-b4b4-36d065963ac5)
